@@ -1,0 +1,285 @@
+
+
+* {
+    
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* 
+
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+                                                                                                                                        ]
+                                    ██╗  ██╗    ███████╗     █████╗     ██████╗     ███████╗    ██████╗                                 ] 
+                                    ██║  ██║    ██╔════╝    ██╔══██╗    ██╔══██╗    ██╔════╝    ██╔══██╗                                ]
+                                    ███████║    █████╗      ███████║    ██║  ██║    █████╗      ██████╔╝                                ]
+                                    ██╔══██║    ██╔══╝      ██╔══██║    ██║  ██║    ██╔══╝      ██╔══██╗                                ]
+                                    ██║  ██║    ███████╗    ██║  ██║    ██████╔╝    ███████╗    ██║  ██║                                ]
+                                    ╚═╝  ╚═╝    ╚══════╝    ╚═╝  ╚═╝    ╚═════╝     ╚══════╝    ╚═╝  ╚═╝                                ]
+                                                                                                                                        ]                                                                    
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+
+*/
+
+
+#bloc_head {
+    
+    /* border: solid 1px rgb(255, 0, 13); */
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items:center;
+
+}
+
+#head_title {
+
+    /* border: solid 1px black; */
+    padding-top: 40px;
+    font-weight: bolder;   
+    color: rgb(103, 168, 66);
+    padding-left: 12px;
+
+}
+
+.title_line {
+
+    margin: 0 10px;
+    height: 5px;
+    background-color: rgb(103, 168, 66);
+    border-style: hidden;
+
+}
+
+.tampon_line {
+
+    height: 2px;
+    background-color: rgb(61, 61, 61);
+
+}
+
+
+figure {
+
+    /* border: solid 1px blue; */
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.logo_afpa {
+    
+    /* border: 1px solid black; */
+
+    width: 20vh;
+    
+}
+
+
+/* 
+
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+                                                                                                                                        ]
+                                            ███╗   ███╗     █████╗     ██╗    ███╗   ██╗                                                ]
+                                            ████╗ ████║    ██╔══██╗    ██║    ████╗  ██║                                                ]
+                                            ██╔████╔██║    ███████║    ██║    ██╔██╗ ██║                                                ]
+                                            ██║╚██╔╝██║    ██╔══██║    ██║    ██║╚██╗██║                                                ]
+                                            ██║ ╚═╝ ██║    ██║  ██║    ██║    ██║ ╚████║                                                ]
+                                            ╚═╝     ╚═╝    ╚═╝  ╚═╝    ╚═╝    ╚═╝  ╚═══╝                                                ]                                                   
+                                                                                                                                        ]
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+[------------------------------------------------------------- [@@@@] ------------------------------------------------------------------] 
+
+*/
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+
+}
+
+.form_mainbloc {
+
+    padding: 0 30px;
+}
+
+.top_form {
+
+    /* border: solid 1px orangered; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+
+.mid_form {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.container_nomprenom {
+
+    margin-bottom: 10px;
+
+}
+
+.bloc_detailAbsence {
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+
+}
+
+.details_dateAbs {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.label_input {
+
+    font-weight: bold;
+}
+
+.input_nomStagiaire, .input_prenomStagiaire, .input_formationStagiaire, .input_dateabsence {
+
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    width: 70vh;
+    border-bottom: 2px black solid;
+
+}
+
+.input_absence {
+
+
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 2px black solid;
+
+}
+
+#dateAbs_input {
+    /* width: 40vh; */
+    text-align: center;
+    margin-left: 2px;
+}
+
+.periode_abs {
+
+    margin-left: 50px;
+
+}
+
+.container_titreblocabsence {
+
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+
+}
+
+.bloc_motifAbs {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.motifAbsence {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkbox_motif {
+    display: flex;
+    flex-direction: row-;
+    justify-content: flex-start;
+}
+
+.titre_codeAbs {
+
+    font-weight: bold;
+
+}
+
+.bloc_tampons {
+
+    width: 100vh;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.bloc_cachet_entreprise {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bloc_dateSignature {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.case_signature {
+
+    border : solid black 1px;
+    height: 20vh;
+    padding-top: 20px;
+
+}
+
+.bloc_cachet_direction {
+
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    margin-top: 30px;
+
+}
+
+
+.case_direction {
+
+    border : solid black 1px;
+    width: 100%;
+    height: auto;  
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}

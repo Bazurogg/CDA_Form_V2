@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/styles_fiche.css">
+    <title>CDA Form</title>
+</head>
+
+<body>
+
+    <div class="form_mainbloc">
+
+        <header>
+    
+            <div id="bloc_head">
+    
+      
+                <h1 id="head_title">Autorisation d'Absence</h1>
+                
+            
+                <figure>
+    
+                    <img class="logo_afpa" src="assets/logo_afpa.png" alt="logo afpa"/>
+    
+                </figure>
+    
+                
+            </div>
+    
+            <hr class="title_line" />
+    
+        </header>
+    
+        <main>
+    
+            <div class="top_form">
+    
+                <div class="bloc_detailUser">
+        
+                    <div class="container_nomprenom">
+                        
+                        <label class="label_input">NOM :</label>
+                        <input class="input_nomStagiaire" type="text">
+                        
+                        <label class="label_input">PRENOM :</label>
+                        <input class="input_prenomStagiaire" type="text">
+        
+                    </div>
+        
+                    <label class="label_input">Formation suivie :</label>
+                    <input class="input_formationStagiaire" type="text">
+        
+                </div>
+                
+                <div class="bloc_detailAbsence">
+                    
+                    <span><strong>Demande l'autorisation de s'absenter du centre :</strong></span>
+                    
+                    <div class="details_dateAbs">
+    
+                        <div class="date_absence">
+    
+                            <div class="jour_abs">
+        
+                                <label>Le</label>
+                                <input class="input_dateabsence" type="text" id="dateAbs_input">
+        
+                            </div>
+        
+        
+                            <div class="heure_abs">
+        
+                                <label for="heure_debut">De</label>
+                                <input class="input_absence" type="text"><span>h</span>
+                                <label for="heure_fin">à</label><input class="input_absence" type="text"><span>h</span>
+        
+                            </div>
+    
+                        </div>
+                        
+                        <span><i><strong>ou </strong></i></span>
+        
+                        <div class="periode_abs">
+    
+                            <div class="date_periodeAbs">
+                                
+                                <label for="date_debut">Du</label>
+                                <input class="input_absence" type="text">
+                                <label for="date_fin">au</label>
+                                <input class="input_absence" type="text">
+    
+                            </div>
+                            
+                            <div class="totalJoursPeriode">
+                                
+                                <label for="totalJours">Soit</label>
+                                <input class="input_absence" type="text">jours complets
+    
+                            </div>
+        
+                        </div>
+    
+                    </div>
+                    
+                </div>
+    
+            </div>
+    
+            <span><strong>Pour le motif suivant :</strong><span>
+            
+            <div class="mid_form">
+    
+                <div class="bloc_motifAbs">
+    
+                    <div class="motifAbsence">
+                        
+                        <div class="container_titreblocabsence">
+                            
+                            <span><strong>Motif de l'absence</strong></span>
+                        
+                        </div>
+    
+                        <span class="titre_codeAbs">Code01 : Retard absence non rémunéré</span>
+                        
+                        <div class="checkbox_motif">
+                            
+                            <input type="checkbox" name="retard">
+                            
+                            <label for="retard">Retard</label>
+                            
+                        </div>
+                        
+                        <span class="titre_codeAbs">Code04 : Grève Afpa</span>
+                        
+                        <div class="checkbox_motif">
+                            
+                            <input type="checkbox" name="grève">
+                            
+                            <label for="grève">Grève Afpa</label>
+                            
+                        </div>
+                        
+                        <span class="titre_codeAbs">Code05 : Maladie</span>
+                        
+                        <div class="checkbox_motif">
+                            
+                            <input type="checkbox" name="maladie">
+                            
+                            <label for="maladie">Grève Afpa</label>
+                            
+                        </div>
+    
+                        <span class="titre_codeAbs">Code06 : Absence Légale</span>
+                        
+                        <div class="checkbox_motif"> 
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Naissance ou adoption (3 jours)</label> 
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Mariage (4 jours)</label>
+                        </div>
+                            
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Mariage d'un enfant (1 jour)</label>
+                        </div>
+                        
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Décès du conjoint ou du partenaire lié par un act civil de solidarité ou d'un enfant (2 jours)</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Décès du père, de la mère, du beau-père, de la belle-mère, d'un frère ou d'une soeur (1 jour)</label>
+                        </div>
+                            
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Visite médicale obligatoire de la grossesse</label>
+                        </div>
+                        
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Stagiaire élu membre du CA d'une caisse de sécurité sociale</label>
+                        </div>
+    
+    
+                        <span class="titre_codeAbs">Code 20 - 21 - 30 - 31 - 31 - 40 - 41 : Accident</span>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Accident travail sans arrêt</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Accident travail avec arrêt</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Accident trajet sans arrêt</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Accident trajet avec arrêt</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Accident travail hors Afpa sans arrêt</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Accident travail hors Afpa avec arrêt</label>
+                        </div>
+                        
+                        
+                        
+                        <span class="titre_codeAbs">Code 98 : Absence autorisée non rémunérée</span>
+                        
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Accident travail hors Afpa avec arrêt</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Recherche PE</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Recherche d'un emploi</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Visite d'un salon</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Enquête en entreprise</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Viste d'un autre centre</label>
+                        </div>
+    
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">RDV psychologue du travail</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">RDV France Travail</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Absence pour fêtes religieuses hors jours fériés légaux</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Grèves des transports</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Intempéries</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">RDV avec le conseiller militaire</label>
+                        </div>
+    
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">RDV avec le juge, Convocation au tribunal ou commissariat</label>
+                        </div>
+                        
+                        <div class="checkbox_motif">
+                            <input type="checkbox" name="absence autorisée">
+                            <label for="absence autorisée">Recherche de logement, Rdv organisme divers</label>
+                        </div>
+    
+    
+                        <span class="titre_codeAbs">Code 99 : Absence non autorisée non rémunérée</span>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="bloc_tampons">
+    
+                    <div class="bloc_cachet_entreprise">
+    
+                        <span>Cachet de l'entreprise</span>
+                        <hr class="tampon_line"/>
+                        <span>Merci d'apposer votre cachet pour justifier de l'absence de la formation de :</span>
+    
+                    </div>
+                    
+                    <div class="bloc_dateSignature">
+                        
+                        <span class="case_signature">Date et signature du stagiaire</span>
+                        
+                        <span class="case_signature">Date et signature du formateur</span>
+                        
+                    </div>
+                    
+                    <div class="bloc_cachet_direction">
+    
+                        <span class="case_direction">Avis du MF pour décision du Directeur</span>
+                        
+                        <span class="case_direction">Décision du Directeur</span>
+                    
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+    
+        </main>
+    
+        <footer>
+    
+    
+    
+        </footer>
+        
+    </div>
+
+</body>
+
+</html>
