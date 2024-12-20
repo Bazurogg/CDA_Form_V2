@@ -59,9 +59,8 @@ body {
     position: relative;
     width: 90vh;
     height: 50vh;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    display: flex;
+    flex-direction: column;
     margin-top: 20vh;
     padding: 15px;
     gap: 5px;
@@ -84,22 +83,66 @@ body {
 #form_btn {
 
     z-index: 1;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    margin: 20px 120px;
+    width: 30%;
     border-style: none;
-    border-radius: 5px;
+    border-radius: 9px 9px 9px 9px;
+-moz-border-radius: 9px 9px 9px 9px;
+-webkit-border-radius: 9px 9px 9px 9px;
+border: 0px solid #000000;
+    border: 3px solid white;
+    
     /* border: 1px solid rgb(133, 133, 133); */
-    box-shadow: 6px 6px 7px -2px rgba(0,0,0,0.58);
-    -webkit-box-shadow: 6px 6px 7px -2px rgba(0,0,0,0.58);
-    -moz-box-shadow: 6px 6px 7px -2px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 6px 15px 19px 1px rgba(0,0,0,0.47);
+-moz-box-shadow: 6px 15px 19px 1px rgba(0,0,0,0.47);
+box-shadow: 6px 15px 19px 1px rgba(0,0,0,0.47);
 
 }
 
+.formbtn_box {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #a7fcb2 0%, #9ce77e  51%, #589c31  100%)}
+
+.btn-grad {
+    
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: black;            
+   box-shadow: 0 0 20px #eee;
+   display: block;
+
+}
+
+.btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: white;
+   text-decoration: none;
+}
+
 .infoperso_container {
-    gap: 10px;
+    /* border: 1px solid grey; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 5px;
+}
+
+.infodate_container {
+
+    height: 20vh;
+
 }
 
 input {
@@ -116,6 +159,7 @@ input {
 
 /* Waves Animation start*/
 .waves {
+
     position: absolute;
     width: 100%;
     height: 15vh;
@@ -152,6 +196,7 @@ input {
 }
 
 @keyframes move-forever {
+
     0% {
         transform: translate3d(-90px, 0, 0);
     }
@@ -159,8 +204,8 @@ input {
     100% {
         transform: translate3d(85px, 0, 0);
     }
-}
 
+}
 
 /*Shrinking for mobile*/
 
