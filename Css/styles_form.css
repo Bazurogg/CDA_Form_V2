@@ -85,11 +85,11 @@ body {
     z-index: 1;
     width: 30%;
     border-style: none;
-    border-radius: 9px 9px 9px 9px;
--moz-border-radius: 9px 9px 9px 9px;
--webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 14px 14px 14px 14px;
+-moz-border-radius: 14px 14px 14px 14px;
+-webkit-border-radius: 14px 14px 14px 14px;
 border: 0px solid #000000;
-    border: 3px solid white;
+    border: 5px solid white;
     
     /* border: 1px solid rgb(133, 133, 133); */
     -webkit-box-shadow: 6px 15px 19px 1px rgba(0,0,0,0.47);
@@ -114,10 +114,12 @@ align-items: center;
    margin: 10px;
    padding: 15px 45px;
    text-align: center;
-   text-transform: uppercase;
+   font-size: 17px;
+   /* text-transform: uppercase; */
    transition: 0.5s;
    background-size: 200% auto;
-   color: black;            
+   color: black;    
+   letter-spacing: 3px;        
    box-shadow: 0 0 20px #eee;
    display: block;
 
