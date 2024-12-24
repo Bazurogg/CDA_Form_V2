@@ -32,6 +32,7 @@ body {
     font-weight: 900;
     font-size: 60px;
     color: white;
+    
 
 }
 
@@ -58,19 +59,29 @@ body {
     display: flex;
     flex-direction: column;
     justify-content:space-around;
-    border: white 1px solid;
     margin-top: 15vh;
 
 }
 
-.form_titre {
+.formtitre_container {
 
-    border: #9ce77e 1px solid;
-    
-
+    background-color: var(--softgrey);
+    width: 50%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
 }
 
 
+.form_titre {
+
+    color: var(--backg);
+    font-size: 30px;
+    padding-left: 40px;
+    letter-spacing: 1px;
+
+}
 
 .afpa_form {
 
@@ -80,6 +91,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 15px;
+    margin-top: 10px;
     gap: 5px;
     overflow: hidden;
     border: 15px solid var(--softgrey);
@@ -108,21 +120,32 @@ body {
     
     /* border: 1px solid rgb(133, 133, 133); */
     -webkit-box-shadow: 6px 15px 19px 1px rgba(0,0,0,0.47);
--moz-box-shadow: 6px 15px 19px 1px rgba(0,0,0,0.47);
-box-shadow: 6px 15px 19px 1px rgba(0,0,0,0.47);
+    -moz-box-shadow: 6px 15px 19px 1px rgba(0,0,0,0.47);
+    box-shadow: 6px 15px 19px 1px rgba(0,0,0,0.47);
 
 }
 
 .formbtn_box {
 
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
+label {
 
-.btn-grad {background-image: linear-gradient(to right, #a7fcb2 0%, #9ce77e  45%, #589c31  100%)}
+    color: var(--backg);
+    
+}
+
+
+
+.btn-grad {
+
+    background-image: linear-gradient(to right, #a7fcb2 0%, #9ce77e  45%, #589c31  100%)
+
+}
 
 .btn-grad {
     
