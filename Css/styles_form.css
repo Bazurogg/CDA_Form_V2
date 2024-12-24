@@ -53,6 +53,24 @@ body {
     
 }
 
+.form_box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    border: white 1px solid;
+    margin-top: 15vh;
+
+}
+
+.form_titre {
+
+    border: #9ce77e 1px solid;
+    
+
+}
+
+
 
 .afpa_form {
 
@@ -61,7 +79,6 @@ body {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    margin-top: 20vh;
     padding: 15px;
     gap: 5px;
     overflow: hidden;
@@ -85,10 +102,8 @@ body {
     z-index: 1;
     width: 30%;
     border-style: none;
-    border-radius: 14px 14px 14px 14px;
--moz-border-radius: 14px 14px 14px 14px;
--webkit-border-radius: 14px 14px 14px 14px;
-border: 0px solid #000000;
+
+    border: 0px solid #000000;
     border: 5px solid white;
     
     /* border: 1px solid rgb(133, 133, 133); */
@@ -107,7 +122,7 @@ align-items: center;
 }
 
 
-.btn-grad {background-image: linear-gradient(to right, #a7fcb2 0%, #9ce77e  51%, #589c31  100%)}
+.btn-grad {background-image: linear-gradient(to right, #a7fcb2 0%, #9ce77e  45%, #589c31  100%)}
 
 .btn-grad {
     
@@ -116,19 +131,22 @@ align-items: center;
    text-align: center;
    font-size: 17px;
    /* text-transform: uppercase; */
-   transition: 0.5s;
+   transition: 0.4s;
    background-size: 200% auto;
    color: black;    
    letter-spacing: 3px;        
    box-shadow: 0 0 20px #eee;
+   border-radius: 14px 14px 14px 14px;
+   -moz-border-radius: 14px 14px 14px 14px;
+   -webkit-border-radius: 14px 14px 14px 14px;
    display: block;
 
 }
 
 .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: white;
-   text-decoration: none;
+    background-position: right center; /* change the direction of the change here */
+    color: white;
+    font-weight: 700;
 }
 
 .infoperso_container {
@@ -154,9 +172,14 @@ input {
     width: 220px;
     border-radius: 3px;
     border: 1px solid lightgray;
-
+    
 }
 
+input:focus {
+
+    border: 2px solid #9ce77e;
+
+}
 
 
 /* Waves Animation start*/
