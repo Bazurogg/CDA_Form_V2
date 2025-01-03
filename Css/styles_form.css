@@ -71,6 +71,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 25px;
+    z-index: 1;
 }
 
 
@@ -139,8 +140,6 @@ label {
     
 }
 
-
-
 .btn-grad {
 
     background-image: linear-gradient(to right, #a7fcb2 0%, #9ce77e  45%, #589c31  100%)
@@ -169,7 +168,7 @@ label {
 .btn-grad:hover {
     background-position: right center; /* change the direction of the change here */
     color: white;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 .infoperso_container {
@@ -194,16 +193,18 @@ input {
     height: 30px;
     width: 220px;
     border-radius: 3px;
-    border: 1px solid lightgray;
+    border: 2px solid lightgray;
+    transition: ease-in-out 0.4s;
+    outline: none;
     
 }
 
 input:focus {
 
-    border: 2px solid #9ce77e;
-
+    border: var(--afpa) 2px solid;
+    box-shadow: 0 0 5px rgba(118, 255, 171, 0.5);
+    
 }
-
 
 /* Waves Animation start*/
 .waves {
